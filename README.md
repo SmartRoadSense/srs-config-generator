@@ -1,1 +1,1 @@
-"# srs-config-generator" 
+# srs-config-generator
