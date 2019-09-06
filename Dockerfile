@@ -1,9 +1,10 @@
 FROM python:3
 
-WORKDIR /config
+ADD create-config.py /
 
-ADD create-config.py /config/
+WORKDIR /
 
 RUN pip install python-dotenv
 
-CMD [ "python", "./create-config.py" ]
+CMD [ "python", "./create-config.py", "config/" ]
+
